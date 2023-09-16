@@ -1,4 +1,4 @@
-<h1>DigitalBank</h1>
+<h1>DigitalBank :moneybag: </h1>
   
 <p align="center">
 
