@@ -17,7 +17,7 @@
 
 :small_blue_diamond: [Funcionalidades](#funcionalidades)
 
-## Descrição do projeto 
+## <a name="descrição-do-projeto"> Descrição do projeto</a>
 
 <P align="justify">Esta Api simula funcionalidades básicas de um banco. Com ela você poderá criar uma conta bancária, fazer depósitos, saques, trasnsferências entre outras funcinalidades.</P>
 
@@ -37,7 +37,7 @@ No terminal, clone o projeto:
 git clone git@github.com:amorimleon/digitalBank.git
 ```
 
-Instale o Express:
+No terminal do VsCode, Instale o Express:
 
 ```
 npm install express
