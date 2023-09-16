@@ -1,6 +1,8 @@
 <h1>DigitalBank</h1>
-
+  
 <p align="center">
+
+
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black"/>
   <img src="https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
 </p>
@@ -17,7 +19,7 @@
 
 :small_blue_diamond: [Funcionalidades](#funcionalidades)
 
-## <a name="descrição-do-projeto"> Descrição do projeto</a>
+## Descrição do projeto
 
 <P align="justify">Esta Api simula funcionalidades básicas de um banco. Com ela você poderá criar uma conta bancária, fazer depósitos, saques, trasnsferências entre outras funcinalidades.</P>
 
@@ -48,3 +50,72 @@ Para executar o express use o seguinte comando:
 npm run dev
 ```
 ## Funcionalidades
+### :pushpin: **Criar Uma conta:**
+
+🔗 Rota
+```
+http://localhost:8000/contas
+```
+Body:
+```
+{
+"nome": "nomeUsuario",
+"cpf":"cpfUsuario",
+"data_nascimento":"aaaa-mm-dd",
+"telefone": "999999999",
+"email":"usuario@mail.com",
+"senha": "senhaUsuario"
+}
+```
+
+### :pushpin: **Depositar:**
+
+🔗 Rota
+```
+http://localhost:8000/transacoes/depositar
+```
+Body:
+```
+{
+"numero_conta": "1", 
+"valor": "2000"
+}
+```
+
+### :pushpin: **Sacar:**
+
+🔗 Rota
+```
+http://localhost:8000/transacoes/sacar
+```
+Body:
+```
+{
+"numero_conta": "2",
+"valor": "5000",
+"senha": "123456"
+}
+```
+
+### :pushpin: **Transferir:**
+
+🔗 Rota
+```
+http://localhost:8000/transacoes/transferir
+```
+Body:
+```
+{ 
+"numero_conta_origem": "1",
+"numero_conta_destino": "2",
+"valor": "500",
+"senha": "123456"
+}
+```
+
+### :pushpin: **Extrato:**
+
+🔗 Rota
+```
+http://localhost:8000//contas/extrato?numero_conta=1&senha=123456
+```
