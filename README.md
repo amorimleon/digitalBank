@@ -52,7 +52,9 @@ npm run dev
 ## Funcionalidades
 ### :pushpin: **Criar Uma conta:**
 
-🔗 Rota
+🔗 Rota 
+
+Método - Post
 ```
 http://localhost:8000/contas
 ```
@@ -71,6 +73,8 @@ Body:
 ### :pushpin: **Depositar:**
 
 🔗 Rota
+
+Método - Post
 ```
 http://localhost:8000/transacoes/depositar
 ```
@@ -85,6 +89,8 @@ Body:
 ### :pushpin: **Sacar:**
 
 🔗 Rota
+
+Método - Post
 ```
 http://localhost:8000/transacoes/sacar
 ```
@@ -100,6 +106,8 @@ Body:
 ### :pushpin: **Transferir:**
 
 🔗 Rota
+
+Método - Post
 ```
 http://localhost:8000/transacoes/transferir
 ```
@@ -116,6 +124,8 @@ Body:
 ### :pushpin: **Extrato:**
 
 🔗 Rota
+
+Método - Get
 ```
 http://localhost:8000//contas/extrato?numero_conta=1&senha=123456
 ```
